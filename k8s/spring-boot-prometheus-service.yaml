@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: spring-boot-prometheus
+spec:
+  selector:
+    app: spring-boot-prometheus
+  ports:
+    - port: 8080
+      protocol: TCP
+      targetPort: 8080
